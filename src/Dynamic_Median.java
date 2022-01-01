@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.awt.*;
 import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -7,17 +9,21 @@ public class Dynamic_Median {
         public static void main (String[] args) {
             BufferedReader reader = null;
             File f = new File(args[0]);
+            ImageIcon icon1 = new ImageIcon("src/images/covid-19.png");
+            Image image1 = icon1.getImage().getScaledInstance(40, 40, 0);
+            ImageIcon icon2 = new ImageIcon("src/images/warning.png");
+            Image image2 = icon2.getImage().getScaledInstance(40, 40, 0);
             try {
                 reader = new BufferedReader(new FileReader(f));
                 String line;
                 line = reader.readLine();
                 int c = 0;
+                String outputstr ="";
                 while (line != null) {
                     c++;
                     line = reader.readLine();
                 }
                 if (c >= 1) {
-                    Scanner scanner = new Scanner(System.in);
                     PQ maxheap = new PQ();
                     PQ minheap = new PQ();
                         reader = new BufferedReader(new FileReader(f));
@@ -58,6 +64,7 @@ public class Dynamic_Median {
                             }
                             if (M%5==0){
                                 System.out.println("Median of first "+M+" rows is "+minheap.max().getName());
+                                outputstr += "Median of first "+M+" rows is "+minheap.max().getName()+"\n";
                             }
                             line = reader.readLine();
                         }
@@ -65,17 +72,23 @@ public class Dynamic_Median {
                 else {
                     throw new NullPointerException();
                 }
+                JOptionPane.showMessageDialog(null, outputstr, "Median of Covid Cases Density", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(image1));
 
             } catch (FileNotFoundException e) {
                 System.out.println("The file was not found");
+                JOptionPane.showMessageDialog(null,"The file was not found","Error",JOptionPane.WARNING_MESSAGE,new ImageIcon (image2));
             } catch (IOException e) {
                 System.out.println("Error reading file " + f.getName());
+                JOptionPane.showMessageDialog(null,"Error reading file " + f.getName(),"Error",JOptionPane.WARNING_MESSAGE,new ImageIcon (image2));
             } catch (NullPointerException e) {
                 System.out.println("The file " + f.getName() + " is empty!");
+                JOptionPane.showMessageDialog(null,"The file " + f.getName() + " is empty!","Error",JOptionPane.WARNING_MESSAGE,new ImageIcon (image2));
             } catch (IncorrectInputException e) {
                 System.out.println(e);
+                JOptionPane.showMessageDialog(null,e,"Error",JOptionPane.WARNING_MESSAGE,new ImageIcon (image2));
             } catch (InputMismatchException e) {
                 System.out.println("Wrong type of input!");
+                JOptionPane.showMessageDialog(null,"Wrong type of input!","Error",JOptionPane.WARNING_MESSAGE,new ImageIcon (image2));
             }
         }
 }

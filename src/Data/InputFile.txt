@@ -7,4 +7,4 @@
 98 Madrid 869000 1600
 78 Budapest 450789 800
 21 Berlin 985125 1800
-95 Thesaloniki 398547 600
+95 Thessaloniki 398547 600
