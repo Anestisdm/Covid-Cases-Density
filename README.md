@@ -14,6 +14,10 @@ cases.
 ### 2 - Application *Covid_k*
 The application will read the daily covid cases report from  a text file. Then, it will ask the user for the parameter k that represents the number of the cities that user want to print. Lastly, the application will print the top k cities with higher cases numbers per 50,000 citizens. The application implemented with custom Priority Queue.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/72802400/147857341-9c9775ad-9192-4add-a33f-ea0f68aeacfb.png">
+</p>
+
 ### 3 - Application *DynamicCovid_k_withPQ*
 Same as the previous application with only difference that in the Priority Queue retain only the k cities with higher cases numbers per 50,000 citizens every time the application reads a new single line from the text file. This means that we do not keep data in the Priority Queue that we do not need.
 
