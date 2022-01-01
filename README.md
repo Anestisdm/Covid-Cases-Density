@@ -20,3 +20,26 @@ Same as the previous application with only difference that in the Priority Queue
 ### 4 - Application *Dynamic_Median*
 In this application we read an input file again in the same format, and we are interested in answering questions like: “How much
 high cases density a city needs to have to be in the top 50% of cities we are looking at? " (to enter a yellow zone e.g.). This means that we calculate the median from the covid case densities we have.
+
+### 5 - How it works
+
+**Workstation Specifications**
+- Windows 10 or Linux or MacOS, 64 bit
+- RAM, 8GB required
+- 128 GB Storage 
+- 4 Core CPU
+
+**Steps to run the application**
+1. Clone this repository to Intellij
+3. Run 'Covid_k' or 'DynamicCovid_k_withPQ' or 'Application *Dynamic_Median' from Intellij to create configurations
+4. Go to edit configurations on the application you want to run
+5. Add in the program arguments the following: 'src/Data/InputFile.txt'
+6. Run the application you want to run
+7. Start using the application and all the features from UI that appears
+
+
+![image](https://user-images.githubusercontent.com/72802400/147856923-d8a6b059-c919-4b68-8dcf-19d86a2e60c7.png)
+
+
+### 6 - User Support
+For help or new feature suggestions you can contanct with the development team.
