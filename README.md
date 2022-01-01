@@ -12,14 +12,14 @@ The purpose of this project is to implement a sorting algorithm with Priority Qu
 cases.
 
 ### 2 - Application *Covid_k*
-The application will read the daily covid cases report from  a text file. Then, it will ask the user for the parameter k that represents the number of the cities that user want to print. Lastly, the application will print the top k cities with higher cases numbers per 50,000 citizens. The application implemented with custom Priority Queue.
+The application will read the daily covid cases report from  a text file. Then, it will ask the user for the parameter k that represents the number of the cities that user want to print. Lastly, the application will print the top k cities with higher cases numbers per 50,000 citizens. The application implemented with the algorithm of Heapsort.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/72802400/147858616-eb7363d6-d795-4390-bec9-a086169a2406.png">
 </p>
 
 ### 3 - Application *DynamicCovid_k_withPQ*
-Same as the previous application with only difference that in the Priority Queue retain only the k cities with higher cases numbers per 50,000 citizens every time the application reads a new single line from the text file. This means that we do not keep data in the Priority Queue that we do not need.
+Same as the previous application with only difference that in this application we use Priority Queue for sorting and inside the Priority Queue we keep only the k cities with higher cases numbers per 50,000 citizens every time the application reads a new single line from the text file. This means that we do not keep data in the Priority Queue that we do not need.
 
 ### 4 - Application *Dynamic_Median*
 In this application we read an input file again in the same format, and we are interested in answering questions like: “How much
