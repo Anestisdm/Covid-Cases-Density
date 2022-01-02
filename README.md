@@ -35,11 +35,11 @@ high cases density a city needs to have to be in the top 50% of cities we are lo
 
 **Steps to run the application**
 1. Clone this repository to Intellij
-3. Run 'Covid_k' or 'DynamicCovid_k_withPQ' or 'Dynamic_Median' from Intellij to create configurations
-4. Go to edit configurations on the application you want to run
-5. Add in the program arguments the following: 'src/Data/InputFile.txt'
-6. Run the application you want to run
-7. Start using the application and all the features from UI that appears
+2. Run 'Covid_k' or 'DynamicCovid_k_withPQ' or 'Dynamic_Median' from Intellij to create configurations
+3. Go to edit configurations on the application you want to run
+4. Add in the program arguments the following: 'src/Data/InputFile.txt'
+5. Run the application you want to run
+6. Start using the application and all the features from UI that appears
 
 
 ![image](https://user-images.githubusercontent.com/72802400/147856923-d8a6b059-c919-4b68-8dcf-19d86a2e60c7.png)
