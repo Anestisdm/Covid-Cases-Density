@@ -44,6 +44,5 @@ high cases density a city needs to have to be in the top 50% of cities we are lo
 
 ![image](https://user-images.githubusercontent.com/72802400/147856923-d8a6b059-c919-4b68-8dcf-19d86a2e60c7.png)
 
-
 ### 6 - User Support
 For help or new feature suggestions you can contanct with the development team.
